@@ -18,7 +18,7 @@ public class activity_inicio extends Activity {
         setContentView(R.layout.activity_activity_inicio);
         //Inicializa el Parse
         Parse.initialize(this, "D0VpI5julPhBx23w2lGwdNu1liCebML65PnidGyp", "B1HC6iACNeUwbE5xNWxYBOFQIlNomBgJrjCXVcoH");
-        //Crea las instancias
+        //Crea las instancias de FoodAdapter
         FoodAdapter foodAdapter = new FoodAdapter(this);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(foodAdapter);
