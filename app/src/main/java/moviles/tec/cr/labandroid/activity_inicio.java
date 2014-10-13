@@ -1,10 +1,12 @@
 package moviles.tec.cr.labandroid;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ListView;
 
 import com.parse.Parse;
@@ -43,5 +45,12 @@ public class activity_inicio extends Activity {
         int id = item.getItemId();
         //Se aconseja realizar en vez de un if
         return id == R.id.action_settings || super.onOptionsItemSelected(item);
+    }
+
+    public void callAddNew() {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        Log.d("Lab1","Estoy en el callAddNew()");
+        Intent intent = new Intent(this, AddItem.class);
+        startActivity(intent);
     }
 }
