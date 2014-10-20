@@ -8,5 +8,8 @@
     <string name="Tipo">Tipo</string>
     <string name="Pais">País</string>
     <string name="title_activity_add_item">AddItem</string>
+    <string name="AddNew">Agregar</string>
+    <string name="New">Nuevo</string>
+    <string name="ChooseImage">Seleccionar imagen</string>
 
 </resources>

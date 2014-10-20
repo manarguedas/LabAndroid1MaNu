@@ -47,10 +47,10 @@ public class activity_inicio extends Activity {
         return id == R.id.action_settings || super.onOptionsItemSelected(item);
     }
 
-    public void callAddNew() {
+    public void callAddNew(View view) {
         // Inflate the menu; this adds items to the action bar if it is present.
         Log.d("Lab1","Estoy en el callAddNew()");
-        Intent intent = new Intent(this, AddItem.class);
+        Intent intent = new Intent(getApplicationContext(), AddItem.class);
         startActivity(intent);
     }
 }
